@@ -1,4 +1,4 @@
-/* #####TABLE OF CONTENTS##### 
+/* #########################TABLE OF CONTENTS##################### 
 	1. HTML ELEMENTS
 		1.1 body
 		1.2 header
@@ -11,18 +11,29 @@
 	4. MULTI SELECTORS
 		4.1 nav h1
 		4.2 .hero h1
-		4.3 .hero p*/
+		4.3 .hero p
+##################################################################*/
 
-/*####### HTML ELEMENTS #####
+/*###### HTML ELEMENTS ######
 ############################*/
 
 body {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100vw;
+	margin: 0;
 }
 
 header {
+	height: 65vh;
+	width: 100%;
+	padding-bottom: 10vh;
 	background-color: #1f2937;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 a {
@@ -33,15 +44,67 @@ a {
 }
 
 nav {
+	align-self: flex-start;
 	display: flex;
 	align-items: center;
+	justify-content: stretch;
+	width: 75vw;
+	height: 10%;
+	margin-top: 0;
 }
 
-/*####### CLASSES ##########
+/*######### CLASSES #########
 ############################*/
+
+.hero {
+	align-self: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 75vw;
+}
+
+.left-hero {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 35%;
+	height: 100%;
+	margin-right: auto;
+}
 
 .navlink {
 	margin-left: auto;
+}
+
+.information {
+	align-self: center;
+	height: 65vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fffffb;
+	gap: 65px;
+}
+
+.card-container {
+	width: 70vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	gap: 0 80px;
+	margin: 0 0 auto 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /*####### ID's ##############
@@ -51,17 +114,67 @@ nav {
 ############################*/
 
 nav h1 {
+	flex: 1;
 	font-size: 24px;
 	color: #f9faf8;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 50%;
 }
 
 .hero h1 {
 	font-size: 48px;
 	font-weight: extra-bold;
 	color: #f9faf8;
+	margin: 0 auto 0 0;
 }
 
 .hero p {
 	font-size: 18px;
-	color: #e5e7eb;
+	color: #e5e7ebd7;
+}
+
+.hero button {
+	font-family: "Montserrat", sans-serif;
+	border: 1px solid transparent;
+	border-radius: 7px;
+	color: #f9faf8;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #3882f8;
+	padding: 8px 20px 8px 20px;
+	margin-right: auto;
+}
+
+.hero img {
+	box-shadow: 3px 3px 12px;
+	height: auto;
+	max-width: 50%;
+	margin-left: auto;
+	align-self: flex-start;
+}
+
+.information h2 {
+	margin-top: 1em;
+	font-size: 36px;
+	margin-bottom: 0;
+	font-weight: extra-bold;
+	color: #1f2937;
+}
+
+.card img {
+	border: 3px solid #3882f8;
+	height: 170px;
+	width: 170px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 6px #1f2937;
+}
+
+.card p {
+	width: 170px;
+	text-align: center;
+	font-size: 16px;
+	color: #1f2937;
 }

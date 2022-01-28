@@ -61,7 +61,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: stretch;
-	width: 65vw;
+	width: 65%;
 	height: 10%;
 	margin-top: 0;
 }
@@ -71,12 +71,34 @@ p {
 }
 
 blockquote {
-	width: 70vw;
+	width: 50%;
 	font-size: 36px;
 	font-style: italic;
 	font-weight: light;
 	color: #df6e55;
-	margin: 0 auto;
+}
+
+h3 {
+	font-size: 20px;
+	margin: 0;
+}
+
+button {
+	font-family: "Montserrat", sans-serif;
+	border-radius: 7px;
+	color: #f9faf8;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 7px 35px;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 8vh;
+	background-color: #2c3a4e;
+	color: #f9faf8;
 }
 
 /*######### CLASSES #########
@@ -87,7 +109,7 @@ blockquote {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	width: 65vw;
+	width: 65%;
 }
 
 .left-hero {
@@ -109,7 +131,7 @@ blockquote {
 	align-self: center;
 	height: 55vh;
 	padding-bottom: 5vh;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -135,13 +157,34 @@ blockquote {
 }
 
 .quote {
-	width: 100vw;
+	width: 100%;
 	height: 55vh;
 	background-color: #93aec8;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.cta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45vh;
+	width: 100%;
+	background-color: #157a6e;
+}
+
+.cta-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	height: 120px;
+	border-top: 1px solid transparent;
+	border-radius: 10px;
+	color: #e5e7eb;
+	background-color: #e88873;
 }
 
 /*####### ID's ##############
@@ -173,14 +216,8 @@ nav h1 {
 }
 
 .hero button {
-	font-family: "Montserrat", sans-serif;
 	border: 1px solid transparent;
-	border-radius: 7px;
-	color: #f9faf8;
-	font-size: 16px;
-	font-weight: bold;
 	background-color: #157a6e;
-	padding: 8px 20px 8px 20px;
 	margin-right: auto;
 }
 
@@ -201,11 +238,11 @@ nav h1 {
 }
 
 .card img {
-	border: 3px solid #f24333;
+	border: 3px solid #df6e55;
 	height: 120px;
 	width: 120px;
 	border-radius: 10px;
-	box-shadow: 1px 1px 6px #072925;
+	box-shadow: 1px 1px 4px #072925;
 }
 
 .card p {
@@ -218,5 +255,16 @@ nav h1 {
 	color: #157a6e;
 	font-weight: bold;
 	font-size: 22px;
-	margin-left: 45vw;
+	margin-left: 35%;
+}
+
+.cta-content p {
+	margin: 0;
+}
+
+.cta-content button {
+	margin-left: 25%;
+	border: 2px solid #e5e7eb;
+	background-color: transparent;
+	color: #e5e7eb;
 }
